@@ -1,0 +1,6 @@
+services:
+    Jgabryelewicz\Minimumorder\Form\Modifier\CustomerFormModifier:
+        autowire: true
+        public: true
+        arguments:
+            $formBuilderModifier: '@form.form_builder_modifier'

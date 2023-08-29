@@ -1,0 +1,21 @@
+<div class="col">
+    <div class="card">
+        <h3 class="card-header">
+            Informations Minimum Order
+        </h3>
+        <div class="card-body">
+            <div class="row mb-1">
+                <div class="col-4 text-right">
+                    {{ 'Montant minimum du panier pour commander'|trans({}, 'Admin.Global') }}
+                </div>
+                <div class="customer-social-title col-8">
+                    {% if minimum_price_order is null %}
+                        Aucun
+                    {% else %}
+                        {{ minimum_price_order|round(2) }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

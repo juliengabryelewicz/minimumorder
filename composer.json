@@ -1,0 +1,24 @@
+{
+    "name": "jgabryelewicz/minimumorder",
+    "description": "Définit le montant minimum du panier par client.",
+    "authors": [
+        {
+            "name": "Julien Gabryelewicz",
+            "email": "julien.gabryelewicz2@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jgabryelewicz\\Minimumorder\\": "src/"
+        },
+        "exclude-from-classmap": []
+    },
+    "config": {
+        "preferred-install": "dist",
+        "prepend-autoloader": false
+    },
+    "type": "prestashop-module"
+}
