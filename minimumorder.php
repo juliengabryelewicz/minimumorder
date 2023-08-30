@@ -101,7 +101,7 @@ class Minimumorder extends Module
 
     protected function updateData(int $id_user,array $data)
     {
-        Db::getInstance()->Execute("UPDATE " . _DB_PREFIX_ . "customer SET minimum_price_order=".$data["minimum_price_order"]
+        Db::getInstance()->Execute("UPDATE " . _DB_PREFIX_ . "customer SET minimum_price_order=".pSQL($data["minimum_price_order"])
         ." WHERE id_customer=".$id_user);
     }
 
